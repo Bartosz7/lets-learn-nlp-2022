@@ -1,79 +1,92 @@
 [
     {
-        "question": "Which of the following is the best description of a pipeline?",
+        "question": "Choose all of the following that can be included in Jupyter notebooks?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "A computer program that works",
-                "correct": false,
-                "feedback": "False."
-            },
-            {
-                "answer": "Text Recognition software",
-                "correct": false,
-                "feedback": "False."
-            },
-            {
-                "answer": "A chain of processes and tools where the output of each element is the input of the next ",
+                "answer": "Text and graphics output from Python",
                 "correct": true,
                 "feedback": "Correct."
             },
             {
-                "answer": "A method for executing multiple functions at once",
+                "answer": "Typeset mathematics",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Python executable code",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Formatted text",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Live snakes via Python",
                 "correct": false,
-                "feedback": "False. Pipeline is used when doing things in specific order, one after another"
+                "feedback": "I hope not."
             }
         ]
     },
     {
-        "question": "Which table correctly describes the functionality of spacy pipeline components?",
+        "question": "Which of these are used to create formatted text in Jupyter notebooks?",
         "type": "multiple_choice",
         "answers": [
             {
-                "code": "Tokenizer: POS recognition\nTagger: Lemmas\nLemmatizater: Tokens\nParser: relations between tokens\nNER: named entities\n",
+                "answer": "Wiki markup",
                 "correct": false,
                 "feedback": "False."
             },
             {
-                "code": "Tokenizer: tokens\nTagger: POS\nLemmatizater: Lemmas\nParser: relations between tokens\nNER: named entities\n",
+                "answer": "SVG",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "Markdown",
                 "correct": true,
-                "feedback": "True."
+                "feedback": "Correct."
             },
             {
-                "code": "Tokenizer: tokens\nTagger: Lemmas\nLemmatizater: POS\nParser: relations between tokens\nNER: named entities\n",
-                "correct": false,
-                "feedback": "False."
-            },
-            {
-                "code": "Tokenizer: tokens\nTagger: POS\nLemmatizater: Lemmas\nParser:named entities \nNER: relations between tokens\n",
+                "answer": "Rich Text",
                 "correct": false,
                 "feedback": "False."
             }
         ]
     },
     {
-        "question": "Let's say doc is retrieved by applying spacy pipeline on some sentence. How can you view tokens from 3 to 7?,
-        "type": "multiple_choice",
+        "question": "Enter the value of $\\pi$ to 2 decimal places.",
+        "type": "numeric",
         "answers": [
             {
-                "code": "Tokenizer: POS recognition\nTagger: Lemmas\nLemmatizater: Tokens\nParser: relations between tokens\nNER: named entities\n",
-                "correct": false,
-                "feedback": "False."
-            },
-            {
-                "code": "Tokenizer: tokens\nTagger: POS\nLemmatizater: Lemmas\nParser: relations between tokens\nNER: named entities\n",
+                "type": "value",
+                "value": 3.14,
                 "correct": true,
-                "feedback": "True."
+                "feedback": "Correct."
             },
             {
-                "code": "Tokenizer: tokens\nTagger: Lemmas\nLemmatizater: POS\nParser: relations between tokens\nNER: named entities\n",
-                "correct": false,
-                "feedback": "False."
+                "type": "range",
+                "range": [
+                    3.142857,
+                    3.142858
+                ],
+                "correct": true,
+                "feedback": "True to 2 decimal places, but you know $\\pi$ is not really 22/7, right?"
             },
             {
-                "code": "Tokenizer: tokens\nTagger: POS\nLemmatizater: Lemmas\nParser:named entities \nNER: relations between tokens\n",
+                "type": "range",
+                "range": [
+                    -100000000,
+                    0
+                ],
                 "correct": false,
-                "feedback": "False."
+                "feedback": "$\\pi$ is the AREA of a circle of radius 1. Try again."
+            },
+            {
+                "type": "default",
+                "feedback": "$\\pi$ is the area of a circle of radius 1. Try again."
             }
         ]
     },
